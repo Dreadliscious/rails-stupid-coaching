@@ -4,10 +4,10 @@ class QuestionsController < ApplicationController
 
   def answer
     toto = params[:answer]
-    if toto == "I am going to work"
-      @answer = "great"
+    if toto == 'I am going to work'
+      @answer = 'great'
     elsif toto.chars.last == '?'
-      @answer = "Silly question, get dressed and go to work!"
+      @answer = 'Silly question, get dressed and go to work!'
     else
       @answer = "I don't care, get dressed and go to work!"
     end
